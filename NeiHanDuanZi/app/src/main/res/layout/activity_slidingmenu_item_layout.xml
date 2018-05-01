@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rv1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@mipmap/drawerlayout_background">
+
+            <ImageView
+                android:id="@+id/drawer_image_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:src="@mipmap/touxiang" />
+
+            <TextView
+                android:id="@+id/drawer_text_name"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/drawer_image_head"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/activity_qianming"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/lable"
+                android:layout_width="65dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="77dp"
+                android:layout_toRightOf="@id/drawer_image_head"
+                android:text="@string/activity_yznc"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/drewer_image_sex"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="57dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="73dp"
+                android:layout_toRightOf="@id/lable"
+                android:src="@mipmap/sex" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:onClick="wodeguanzhu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rv1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/raw_1499933216" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:onClick="wodeguanzhu"
+                android:text="@string/activity_wodeguanzhu"
+                android:textColor="#6e6a6a"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="14dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="137dp"
+                android:layout_toRightOf="@id/tv1"
+                android:src="@mipmap/raw_1499943790" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:onClick="wodeshoucang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/raw_1499947360" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:gravity="center"
+                android:text="@string/activity_wodeshoucang"
+                android:textColor="#6e6a6a"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="14dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="137dp"
+                android:src="@mipmap/raw_1499943790" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:onClick="sousuohaoyou"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/raw_1499946865" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:text="@string/activity_sousuohaoyou"
+                android:textColor="#6e6a6a"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="14dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/img2"
+                android:layout_marginLeft="137dp"
+                android:src="@mipmap/raw_1499943790" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:onClick="xiaoxitongzhi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/raw_1499947389" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:text="@string/activity_xiaoxitongzhi"
+                android:textColor="#6e6a6a"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="14dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="137dp"
+                android:src="@mipmap/raw_1499943790" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:onClick="yejian"
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="23dp"
+                android:src="@mipmap/yueliang" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="@string/activity_yejianmoshi"
+                android:layout_gravity="center"
+                android:textColor="#6e6a6a"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:onClick="wodezuopin"
+                android:layout_width="0dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:padding="1dp"
+                    android:src="@mipmap/raw_1499947056" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_wodezuopin"
+                    android:textColor="#6e6a6a"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll7"
+                android:onClick="shezhi"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/raw_1499947157" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_shezhi"
+                    android:textColor="#6e6a6a"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

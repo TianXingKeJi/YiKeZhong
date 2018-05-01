@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#44ff">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/fragment_private_letter_img"
+        app:placeholderImage="@mipmap/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/taohuaan1"
+        android:textSize="20sp"
+        android:textColor="#FFDAB9"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/taohuaan2"
+        android:textSize="20sp"
+        android:textColor="#f4f44f"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/taohuaan3"
+        android:textSize="20sp"
+        android:textColor="#44ff44"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/taohuaan4"
+        android:textSize="20sp"
+        android:textColor="#00FFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

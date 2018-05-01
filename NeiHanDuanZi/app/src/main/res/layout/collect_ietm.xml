@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="70dp">
+     <com.facebook.drawee.view.SimpleDraweeView
+         android:id="@+id/collect_img"
+         android:layout_width="70dp"
+         android:layout_height="70dp" />
+
+     <TextView
+         android:id="@+id/collect_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="11dp"
+         android:layout_marginStart="11dp"
+         android:layout_toEndOf="@+id/collect_img"
+         android:layout_toRightOf="@+id/collect_img"
+         android:text="1111"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/collect_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/collect_name"
+         android:layout_alignParentBottom="true"
+         android:layout_alignStart="@+id/collect_name"
+         android:textSize="20dp"
+         android:text="111" />
+     <com.getbase.floatingactionbutton.FloatingActionsMenu
+         android:id="@+id/floating"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_gravity="center_vertical"
+         fab:fab_addButtonColorNormal="@color/blue"
+         fab:fab_expandDirection="left"
+         fab:fab_size="mini">
+
+         <com.getbase.floatingactionbutton.FloatingActionButton
+             android:id="@+id/floating_button_pinglun"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             fab:fab_colorNormal="@color/blue"
+             fab:fab_icon="@drawable/left_wenjian"
+             fab:fab_size="mini" />
+
+         <com.getbase.floatingactionbutton.FloatingActionButton
+             android:id="@+id/floating_button_fenxiang"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             fab:fab_colorNormal="@color/blue"
+             fab:fab_icon="@drawable/left_search"
+             fab:fab_size="mini" />
+
+         <com.getbase.floatingactionbutton.FloatingActionButton
+             android:id="@+id/floating_button_xihuan"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/floating"
+             android:layout_marginEnd="84dp"
+             android:layout_marginRight="84dp"
+             android:layout_marginTop="64dp"
+             fab:fab_colorNormal="@color/blue"
+             fab:fab_icon="@drawable/raw_1499933216"
+             fab:fab_size="mini" />
+
+     </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+ </RelativeLayout>
+    
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/collect_vodie"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+</LinearLayout>

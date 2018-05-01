@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/raw_1499917357"
+    tools:context="com.example.y_xl.neihanduanzi.view.activity.LandActivity">
+
+    <ImageView
+        android:id="@+id/activity_lan_img_bank"
+        android:src="@drawable/raw_1500023215"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:layout_marginTop="90dp"
+        android:src="@drawable/qq20180312104017"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <ImageView
+        android:onClick="weixin"
+        android:id="@+id/qq_login"
+        android:background="@drawable/weixin_bt"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/qq20180312101430"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        />
+
+    <ImageView
+        android:onClick="play"
+        android:id="@+id/weixin_login"
+        android:background="@drawable/qq_bt"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/qq20180312101403"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:onClick="atherLogin"
+        android:id="@+id/qita_login"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otherlogin" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/timg"
+    tools:context="com.example.y_xl.neihanduanzi.view.activity.AtherLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/activity_other_img_bank"
+        android:src="@drawable/raw_1500023215"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+
+        <TextView
+            android:onClick="zhuce"
+            android:layout_weight="9"
+            android:text="@string/zhucezhanghao"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:src="@drawable/qq20180312104017"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="30dp"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/loginName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="@string/loginPass" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:background="#f7bf6a"
+        android:onClick="login"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:text="@string/Primordial" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/odd_photos_simpleDraweeView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/odd_photos_text"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/odd_photos_simpleDraweeView"
+        android:layout_toRightOf="@+id/odd_photos_simpleDraweeView"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="111"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/odd_photos_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/odd_photos_simpleDraweeView"
+        android:layout_alignLeft="@+id/odd_photos_text"
+        android:layout_alignStart="@+id/odd_photos_text"
+        android:maxLines="1"
+        android:minLines="1"
+        android:text="111"
+        android:textSize="10sp" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        fab:fab_addButtonColorNormal="@color/blue"
+        fab:fab_expandDirection="left"
+        fab:fab_size="mini">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/blue"
+            fab:fab_icon="@drawable/left_wenjian"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/blue"
+            fab:fab_icon="@drawable/left_search"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button_xihuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/floating"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:layout_marginTop="64dp"
+            fab:fab_colorNormal="@color/blue"
+            fab:fab_icon="@drawable/raw_1499933216"
+            fab:fab_size="mini" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/odd_photos_simpleDraweeView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/floating" />
+</RelativeLayout>
